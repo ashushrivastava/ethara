@@ -1,0 +1,3 @@
+# Railway Nixpacks (Root Directory = `server`). Start command is in `railway.toml`.
+[phases.build]
+cmds = ["npm run build"]

@@ -1,4 +1,5 @@
-# Railway: set Root Directory to `server`, add variables DATABASE_URL and JWT_SECRET.
+# Railway dashboard: connect this repo, set Root Directory to `server`,
+# then add variables DATABASE_URL and JWT_SECRET (see README).
 [build]
 builder = "NIXPACKS"
 
