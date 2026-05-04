@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "DM Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+  --color-void: #050508;
+  --color-surface: #0a0a0f;
+  --color-surface-2: #12121a;
+  --color-border: #27272f;
+  --color-magenta: #d100d1;
+  --color-magenta-bright: #e933e9;
+  --color-accent: #d100d1;
+  --color-accent-dim: #9d009d;
+  --color-warn: #f59e0b;
+  --color-danger: #ef4444;
+}
+
+.ethara-grid {
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+  background-size: 56px 56px;
+  mask-image: radial-gradient(ellipse 70% 55% at 50% 0%, black 20%, transparent 70%);
+}
+
+body {
+  @apply bg-void text-zinc-100 font-sans antialiased min-h-screen;
+  background-image:
+    radial-gradient(ellipse 100% 80% at 50% -30%, rgba(209, 0, 209, 0.18), transparent 55%),
+    radial-gradient(ellipse 50% 40% at 100% 0%, rgba(120, 50, 200, 0.12), transparent);
+}
